@@ -1,13 +1,15 @@
 import services
 
-
 def main():
+    show_header()
+    services.download_info()
+    display_results()
+
+def show_header():
     print("Welcome to Talk Python episode downloader")
     print()
 
-    services.download_info()
-
-    # TODO: print all episode title
+def display_results():
     for show_id in range(120, 141):
         info = services.get_episode(show_id)
         print("{}. {}".format(info.show_id, info.title))
