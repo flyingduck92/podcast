@@ -3,6 +3,7 @@ import services
 def main():
     show_header()
     services.download_info()
+    print("Working with total of {} episodes".format(services.get_latest_show_id()))
     display_results()
 
 def show_header():
