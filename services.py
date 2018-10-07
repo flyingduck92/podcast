@@ -44,3 +44,6 @@ def get_episode(show_id: int) -> Episode:
 
 def get_latest_show_id():
     return max(episode_data.keys())
+
+def test():
+    pass
