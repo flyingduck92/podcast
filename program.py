@@ -12,6 +12,5 @@ def main():
         info = services.get_episode(show_id)
         print("{}. {}".format(info.show_id, info.title))
 
-
 if __name__ == '__main__':
     main()
